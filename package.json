@@ -1,12 +1,12 @@
 {
   "name": "n8n-nodes-solar-sm",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "Solar LLM and Embeddings nodes for n8n",
   "license": "MIT",
-  "homepage": "https://github.com/ehpyeon/n8n-nodes-solar",
+  "homepage": "https://github.com/san9min/n8n-nodes-solar",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ehpyeon/n8n-nodes-solar.git"
+    "url": "https://github.com/san9min/n8n-nodes-solar.git"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -57,6 +57,6 @@
     "email": "euihyeon.pyeon@gmail.com"
   },
   "bugs": {
-    "url": "https://github.com/ehpyeon/n8n-nodes-solar/issues"
+    "url": "https://github.com/san9min/n8n-nodes-solar/issues"
   }
 }
