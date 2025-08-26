@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-solar-sm",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "description": "Solar LLM and Embeddings nodes for n8n",
   "license": "MIT",
   "homepage": "https://github.com/san9min/n8n-nodes-solar",
@@ -8,14 +8,15 @@
     "type": "git",
     "url": "https://github.com/san9min/n8n-nodes-solar.git"
   },
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "index.js",
   "files": [
-    "dist"
+    "dist",
+    "index.js"
   ],
   "scripts": {
-    "build": "tsc && npm run copy-assets",
+    "build": "tsc && npm run copy-assets && npm run copy-index",
     "copy-assets": "cp src/upstage.svg src/upstage_v2.svg dist/ && cp src/nodes/LmChatUpstage/upstage_v2.svg dist/nodes/LmChatUpstage/ && cp src/nodes/EmbeddingsUpstage/upstage_v2.svg dist/nodes/EmbeddingsUpstage/ && cp src/nodes/LmChatModelUpstage/upstage_v2.svg dist/nodes/LmChatModelUpstage/ && cp src/nodes/EmbeddingsUpstageModel/upstage_v2.svg dist/nodes/EmbeddingsUpstageModel/ || true",
+    "copy-index": "cp dist/index.js ./index.js",
     "dev": "tsc --watch",
     "clean": "rm -rf dist",
     "prepublishOnly": "npm run clean && npm run build",
@@ -53,8 +54,8 @@
     "typescript": "^5.0.0"
   },
   "author": {
-    "name": "Euihyeon Pyeon",
-    "email": "euihyeon.pyeon@gmail.com"
+    "name": "Sang Min Lee",
+    "email": "sangmin09.lee@gmail.com"
   },
   "bugs": {
     "url": "https://github.com/san9min/n8n-nodes-solar/issues"
