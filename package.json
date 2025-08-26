@@ -1,5 +1,5 @@
 {
-  "name": "n8n-nodes-solar",
+  "name": "n8n-nodes-solar-sm",
   "version": "0.2.3",
   "description": "Solar LLM and Embeddings nodes for n8n",
   "license": "MIT",

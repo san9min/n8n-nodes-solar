@@ -7,7 +7,7 @@ import type {
 } from 'n8n-workflow';
 import { NodeConnectionType } from 'n8n-workflow';
 
-export class LmChatUpstage implements INodeType {
+export class LmRequestUpstage implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'Upstage Solar LLM',
 		name: 'lmChatUpstage',
