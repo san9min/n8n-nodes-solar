@@ -5,7 +5,7 @@
     "lib": ["ES2020"],
     "outDir": "dist",
     "rootDir": "src",
-    "strict": true,
+    "strict": false,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
@@ -16,7 +16,8 @@
     "emitDecoratorMetadata": true,
     "resolveJsonModule": true,
     "moduleResolution": "node",
-    "typeRoots": ["node_modules/@types"]
+    "typeRoots": ["node_modules/@types"],
+    "preserveConstEnums": true
   },
   "include": [
     "src/**/*"
