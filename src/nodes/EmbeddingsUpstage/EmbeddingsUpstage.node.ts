@@ -5,7 +5,6 @@ import type {
 	INodeExecutionData,
 	IHttpRequestOptions,
 } from 'n8n-workflow';
-import { NodeConnectionType } from 'n8n-workflow';
 
 export class EmbeddingsUpstage implements INodeType {
 	description: INodeTypeDescription = {
@@ -18,8 +17,8 @@ export class EmbeddingsUpstage implements INodeType {
 		defaults: {
 			name: 'Upstage Embeddings',
 		},
-		inputs: [NodeConnectionType.Main],
-		outputs: [NodeConnectionType.Main],
+		inputs: ['main'] as any,
+		outputs: ['main'] as any,
 		credentials: [
 			{
 				name: 'upstageApi',

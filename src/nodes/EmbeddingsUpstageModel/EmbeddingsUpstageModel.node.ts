@@ -4,7 +4,6 @@ import type {
 	INodeTypeDescription,
 	SupplyData,
 } from 'n8n-workflow';
-import { NodeConnectionType } from 'n8n-workflow';
 
 export class EmbeddingsUpstageModel implements INodeType {
 	description: INodeTypeDescription = {
@@ -33,7 +32,7 @@ export class EmbeddingsUpstageModel implements INodeType {
 		// eslint-disable-next-line n8n-nodes-base/node-class-description-inputs-wrong-regular-node
 		inputs: [],
 		// eslint-disable-next-line n8n-nodes-base/node-class-description-outputs-wrong
-		outputs: [NodeConnectionType.AiEmbedding],
+		outputs: ['ai_embedding'] as any,
 		outputNames: ['Embeddings'],
 		credentials: [
 			{
